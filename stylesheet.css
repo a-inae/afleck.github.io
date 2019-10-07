@@ -1,0 +1,126 @@
+header{
+  background-color: #FA8072;
+  text-align: center;
+  min-width: 500px;
+  max-height: 250px;
+}
+
+
+
+footer{
+  background-color: #FA8072;
+  text-align: center;
+  min-width: 500px;
+  min-height:50px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 550px 550px;
+  grid-template-rows: repeat(3, 350px);
+  grid-gap: 10px;
+  margin-top: 50px;
+  grid-auto-rows: center;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  grid-auto-row: 100px;
+  grid-auto-flow: column;
+}
+
+h1 {
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: left;
+  color: white;
+  padding: 10px 0px 10px 10px;
+}
+
+h2 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #ffa500;
+  padding: 10px 0px 10px 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.entrybg {
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/29/05/07/baked-goods-1867459_1280.jpg");
+  height:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.recipe {
+  width: 200px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.a {
+}
+
+.c {
+}
+
+.time {
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 20px;
+  height: auto;
+}
+
+.mins {
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #4a4a4a;
+  position: relative;
+  bottom: 5px;
+}
+
+.description {
+  font-family: Work Sans;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.29;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #4a4a4a;
+  padding: 10px 0px 10px 10px;
+  border-top: 1px solid #4a4a4a;
+}
+
+.logo {
+  width: 300px;
+  height: 21.1px;
+  object-fit: contain;
+  padding: 100px;
+}
+
+.container {
+  min-width: 500px;
+  margin: auto;
+}
+
+/* For the navigation bar on the top */
+.current{
+  background-color: #4CAF50;
+}
+
+footer {
+  margin-top: 44px;
+}
