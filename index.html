@@ -1,97 +1,50 @@
 <!DOCTYPE html>
 <html>
 
-<!--Note: Used some input from codeacademy tutorial such as theur choice of font-->
-  <head>
-    <meta charset="utf-8">
-    <title>Bun Bun Bake Shop</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-  </head>
+<!--Header-->
+<head>
+	<title>Bun Bun Bake Shop </title>
+	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <body>
+</head>
 
-  	<!-- Navigation Bar-->
-  	<div class="navbar">
-  		<a class="current" href="#">Home</a>
-  		<a class="not-current" href="about.html">About</a>
-  		<a class="not-current" href="contact.html"> Contact</a>
-  		
+<!--Body-->
+<body>
+	<div class="main">
+		<!--The main menu at the top of the screen with the logo to toggle to home-->
+		<div class="menu">
+			<ul>
+				<li class="logo"><img src="links/logo.png"></li>
+				<li class="active">Home</li>
+				<li>Goods</li>
+				<li>About</li>
+				<li><a href="#" class="order-button"><span>Order</span></a></li>
+			</ul>
 	</div>
 
-	<!--image strip to break the header and the nav bar-->
-	<div class="entrybg">
-		<img src=""https://cdn.pixabay.com/photo/2016/11/29/05/07/baked-goods-1867459_1280.jpg"" class="time" />
+	<div class="title">
+		<div class="content">
+			<h1><b>One BUN for one SMILE a day</b></h1>
+			<p> We are not just your ordinary bakery<br>Starting as a small local family business, we first started
+			making our fresh buns just to put a smile <br>  on our relatives faces. Now we want to share our recipie with the whole neighborhood</p>
+			<div class="shop-button">
+				<div class="shop-button-inner"><i class="fa fa-search"></i></div>
+				<small><b>EXPLORE GOODS!</b></small>
+			</div>
+		</div>
 	</div>
-	 <meta name="viewport" content="width=device-width, initial-scale=1">
-     <style>
-          body, html {
-          height: 100%;
-          margin: 0;
-          }
-      </style>
-     <!--image strip to break the header and the nav bar-->
 
-    <div class="container">
+	<div class="title-photo">
+		<img src="links/cover.png">
+	</div>
 
-      <header>
-        <svg height="100" width="500"><text x="0" y="50" fill="white"><h1>Bun Bun Bake Shop</h1></text></svg>
-      </header>
+	<!-- To center shopping cart link to the corner-->
+	<div class="cart">
+		<ul>
+			<li><i class="fa fa-cart-plus"></i><p>CHECK OUT</p></li>
+	</div>
 
-      <main>
-
-
-      	
-        <div class="selection">
-          <img src="https://cdn.pixabay.com/photo/2014/10/22/16/39/strawberries-498207_1280.jpg"  />
-          <h2>ORIGINAL</h2>
-          <img src="https://cdn.pixabay.com/photo/2014/04/02/10/53/shopping-cart-304843_1280.png" class="time" />
-          <p class="shopping">Add to Cart</p>
-          <p class="description">
-            The classic!</p>
-        </div>
-        <div class="selection">
-          <img src="https://cdn.pixabay.com/photo/2010/12/13/10/05/berry-2275_1280.jpg" />
-          <h2>BLACKBERRY</h2>
-          <img src="https://cdn.pixabay.com/photo/2014/04/02/10/53/shopping-cart-304843_1280.png" class="time" />
-          <p class="shopping">Add to Cart</p>
-          <p class="description">
-            Full with berry flavor!
-          </p>
-        </div>
-        <div class="selection">
-          <img src="https://cdn.pixabay.com/photo/2016/02/22/03/49/pecans-1214706_1280.jpg" />
-          <h2>WALNUT</h2>
-          <img src="https://cdn.pixabay.com/photo/2014/04/02/10/53/shopping-cart-304843_1280.png" class="time" />
-          <p class="shopping">Add to Cart</p>
-          <p class="description">
-            Seasonal special out now!</p>
-        </div>
-        <div class="selection">
-          <img src="https://cdn.pixabay.com/photo/2017/07/27/17/50/blackberries-2546146_1280.jpg" />
-          <h2>GLUTEN FREE</h2>
-          <img src="https://cdn.pixabay.com/photo/2014/04/02/10/53/shopping-cart-304843_1280.png" class="time" />
-          <p class="shopping">Add to Cart</p>
-          <p class="description">
-            Our gluten free friendly option!</p>
-        </div>
-        <div class="selection">
-          <img src="https://cdn.pixabay.com/photo/2010/12/13/10/34/anise-2926_1280.jpg" />
-          <h2>PUMPKIN</h2>
-          <img src="https://cdn.pixabay.com/photo/2014/04/02/10/53/shopping-cart-304843_1280.png" class="time" />
-          <p class="shopping">Add to Cart</p>
-          <p class="description">
-            Our classic fall favorite!</p>
-        </div>
-        
-           
-        
-      </main>
-<!--Blank Footer at the bottom for color trim-->
-      <footer></footer>
-
-    </div>
-  </body>
+</body>
 
 </html>

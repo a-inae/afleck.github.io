@@ -1,131 +1,153 @@
-header{
-  background-color: #FA8072;
-  text-align: center;
-  min-width: 500px;
-  max-height: 200px;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: avenir;
 }
 
-
-
-footer{
-  background-color: #FA8072;
-  text-align: center;
-  min-width: 500px;
-  min-height:50px;
+.main{
+  width: 100%
+  height: 100%;
+  background: linear-gradient(#911748,#FEFEFE);
 }
 
-main {
-  display: grid;
-  grid-template-columns: 550px 550px;
-  grid-template-rows: repeat(3, 350px);
-  grid-gap: 10px;
-  margin-top: 50px;
-  grid-auto-rows: center;
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  grid-auto-row: 100px;
-  grid-auto-flow: column;
+.menu ul{
+	display: inline-flex;
+	margin: 50 px;
 }
 
-h1 {
-  font-family: Poppins;
-  font-size: 50px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-align: left;
-  color: white;
-  padding: 10px 0px 10px 10px;
+.menu li{
+	list-style: none;
+	margin: 40px;
+	color: #FFFF;
+	cursor: pointer;
 }
 
-h2 {
-  font-family: Poppins;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  text-align: left;
-  color: #ffa500;
-  padding: 10px 0px 10px 10px;
+/* centers the logo around the main-menu with centering the margin */
+.logo img{
+	width: 80px;
+	margin-top: -0.5px;
+	margin-right: 48px;
 }
 
-img {
-  width: 100%;
-  height: auto;
+.active{
+	color: #911748;
 }
 
-.entrybg {
-  background-image: url("https://cdn.pixabay.com/photo/2016/11/29/05/07/baked-goods-1867459_1280.jpg");
-  height:75%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.order-button{
+	top: 40px;
+	right: 80px;
+	position: absolute;
+	text-decoration: none;
+	color: #FFFF;
+	border: 2px solid transparent;
+	border-radius: 20px;
+	background-image: linear-gradient(#F3D4BF,#911748), radial-gradient(circle at top left, #F3D4BF,#911748);
+	background-origin: border-box;
+	background-clip: content-box,border-box;
 }
 
-.selection {
-  width: 220px;
-  box-shadow: 0 4px 1px 0 rgba(0, 0, 0, 0.5);
+.order-button span {
+	display: block;
+	padding: 8px 22px;
 }
 
-
-.time {
-  padding-left: 10px;
-  padding-top: 10px;
-  width: 20px;
-  height: auto;
+.title{
+	width: 80%;
+	height: 70%;
+	top: 25%;
+	left: 130px;
+	position: absolute;
+	color: #911748;
 }
 
-.shopping {
-  display: inline-block;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: 0.3px;
-  text-align: left;
-  color: #4a4a4a;
-  position: relative;
-  bottom: 3px;
+.content{
+	width: 50%;
+	float:left;
 }
 
-.description {
-  font-family: Work Sans;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.29;
-  letter-spacing: 0.1px;
-  text-align: left;
-  color: #4a4a4a;
-  padding: 10px 0px 10px 10px;
-  border-top: 1px solid #4a4a4a;
+.content h1{
+	width: 640px;
+	font-size: 43px;
+	position: relative;
+	margin-left:40px;
 }
 
-.logo {
-  width: 300px;
-  height: 21.1px;
-  object-fit: contain;
-  padding: 100px;
+.content p{
+	width: 650px;
+	font-size: 15px;
+	margin: 30px 0 30px 40px;
+	line-height:25px;
+	color:#911748;
 }
 
-.container {
-  min-width: 800px;
-  margin: center;
+.title-photo {
+	width:60%;
+	float:right;
 }
 
-/* For the navigation bar on the top */
-.current{
-  background-color: #FA8072;
-  color: white;
-  font-family: Poppins;
-  font-size: 20px;
-  padding: 10px 10px 0px 10px;
+.title-photo img{
+	width:100%;
+	/*margin-top:-20px;
+	padding-left:50px;*/
 }
 
-.not-current {
-  font-family: Poppins;
-  color: #800000;
-  font-size: 20px;
+.shop-button{
+	margin-left:40px;
+	display:inline-flex;
 }
 
-footer {
-  margin-top: 44px;
+.shop-button-inner{
+	height: 50px;
+	width: 50px;
+	border: 2px solid transparent;
+	border-radius: 50%;
+	background-image: linear-gradient(#F3D4BF,#FFFF), radial-gradient(circle at top left, #F3D4BF,#911748);
+	background-origin: border-box;
+	background-clip: content-box,border-box;
+	text-align:center;
+}
+
+.shop-button-inner .fa{
+	padding: 10px 0;
+	font-size:30px;
+	text-align:center;
+	cursor: pointer;
+}
+
+small {
+	margin: auto 20px;
+	cursor: pointer;
+	font-size: 12px;
+	color:#911748;
+	letter-spacing:3px;
+}
+
+.cart{
+	left:0;
+	bottom:0;
+	position:absolute;
+	background: linear-gradient(to right, #F3D4BF,#911748);
+}
+
+.cart ul{
+	display: inline-flex;
+	margin: 30px auto;
+	text-align:center;
+}
+
+.cart ul li{
+	list-style:none;
+	margin: 0 50px;
+	cursor:pointer;
+}
+
+.cart ul li .fa{
+	font-size:25px;
+	color:#FFFF;
+}
+
+.cart ul li p{
+	margin-top: 15px;
+	font-size: 15px;
+	color:#FFFF;
 }
