@@ -30,7 +30,7 @@
 }
 
 .active{
-	color: #911748;
+	color: #DAFA0C;
 }
 
 .order-button{
@@ -142,7 +142,7 @@ small {
 }
 
 .cart ul li .fa{
-	font-size:25px;
+	font-size:45px;
 	color:#FFFF;
 }
 
@@ -151,3 +151,22 @@ small {
 	font-size: 15px;
 	color:#FFFF;
 }
+
+.goods-photo{
+	display:grid;
+	grid-gap:20px;
+	grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+
+.goods-photo img{
+	width:140%;
+	box-shadow: var(--shadow);
+}
+
+.footer{
+	margin-top: 2rem;
+	background: #911748;
+}
+
+
+
