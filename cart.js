@@ -11,3 +11,10 @@ function cart(){
 		plus.addToCart('select', addedToCart)
 	}
 }
+
+function addedToCart {
+	var plus = event.target
+	var imageSrc = img.imageSrc
+	addedToCart (number of clicks, imageSrc)
+	
+}
