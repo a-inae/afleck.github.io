@@ -6,7 +6,7 @@
 	<title>Bun Bun Bake Shop </title>
 	<link rel="stylesheet" href="stylesheet.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<script src="cart.js"></script>
 </head>
 
 <!--Body-->
@@ -15,41 +15,113 @@
 		<!--The main menu at the top of the screen with the logo to toggle to home-->
 		<div class="menu">
 			<ul>
-				<li class="logo"><img src="links/logo.png"></li>
-				<li><a href="index.html">Home</a></li>
-				<li class="active">Shopping Cart</li>
-				<li>About</li>
-				<li><a href="#" class="order-button"><span>Order</span></a></li>
+				<li class="logo"><a href="index.html"><img src="links/logo.png"></a></li>
+				<li><a href="index.html">HOME</a></li>
+				<li>GOODS</li>
+				
 			</ul>
+		</div>
 	</div>
 
 	<div class="title">
 		<div class="content">
-			<h1><b>One BUN for one SMILE a day</b></h1>
-			<p> We are not just your ordinary bakery<br>Starting as a small local family business, we first started
-			making our fresh buns just to put a smile <br>  on our relatives faces. Now we want to share our recipie with the whole neighborhood</p>
+			<h1><b>ORDER SUMMARY</b></h1>
+			<p> All the things you dreamt of in one place</p>
 			
 		</div>
-
+		<!--THE ORDER SUMMARY WITH EACH GOOD LINKED TO THE CART-->
 		<section class="goods-photo">
-			<img src="links/logo.png">
-			<img src="links/pumpkin.png">
-			<img src="links/walnut.png">
-			<img src="links/blackberry.png">
-			<img src="links/caramel.png">
-			<img src="links/logo.png">
+			<div class="item">
+				<span class="item-title">THE ORIGINAL</span>
+				<img src="links/logo.png">
+				<div class="item-details">
+                	<span class="item-price"><h2>$4.99</h2></span>
+                	<input class="item-quantity" type="number" value="0">
+                    <button class="btn shop-button shop-button"type="button">ADD TO CART</button>
+                </div>
+			</div>
+
+			<div class="item">
+				<span class="item-title">PUMPKIN</span>
+				<img src="links/pumpkin.png">
+				<div class="item-details">
+                	<span class="item-price"><h2>$4.99</h2></span>
+                	<input class="item-quantity" type="number" value="0">
+                    <button class="btn shop-button shop-button"type="button">ADD TO CART</button>
+                </div>
+			</div>
+
+			<div class="item">
+				<span class="item-title">WALNUT</span>
+				<img src="links/walnut.png">
+				<div class="item-details">
+                	<span class="item-price"><h2>$4.99</h2></span>
+                	<input class="item-quantity" type="number" value="0">
+                    <button class="btn shop-button shop-button"type="button">ADD TO CART</button>
+                </div>
+			</div>
+
+			<div class="item">
+				<span class="item-title">BLACKBERRY</span>
+				<img src="links/blackberry.png">
+				<div class="item-details">
+                	<span class="item-price"><h2>$4.99</h2></span>
+                	<input class="item-quantity" type="number" value="0">
+                    <button class="btn shop-button shop-button"type="button">ADD TO CART</button>
+                </div>
+			</div>
+
+			<div class="item">
+				<span class="item-title">CARAMEL</span>
+				<img src="links/caramel.png">
+				<div class="item-details">
+                	<span class="item-price"><h2>$4.99</h2></span>
+                	<input class="item-quantity" type="number" value="0">
+                    <button class="btn shop-button shop-button"type="button">ADD TO CART</button>
+                </div>
+			</div>
+
+			<div class="item">
+				<span class="item-title">GLUTEN FREE</span>
+				<img src="links/logo.png">
+				<div class="item-details">
+                	<span class="item-price"><h2>$4.99</h2></span>
+                	<input class="item-quantity" type="number" value="0">
+                    <button class="btn shop-button shop-button"type="button">ADD TO CART</button>
+                    
+                </div>
+			</div>
 		</section>
+
+        
+            
+ 
+
 
 	</div>
 
 
 
 
-
-	<!-- To center shopping cart link to the corner-->
+	<!--SHOPPING CART To center shopping cart link to the corner-->
 	<div class="cart">
 		<ul>
 			<li><i class="fa fa-cart-plus"></i><p>CHECK OUT</p></li>
+
+        <!--Displaying cart total and summary here-->
+		<div>
+            
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="total-price">$0</span>
+                <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+		</div>
+
 	</div>
 
 </body>

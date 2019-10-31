@@ -6,7 +6,7 @@
 	<title>Bun Bun Bake Shop </title>
 	<link rel="stylesheet" href="stylesheet.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<script src="cart.js"></script>
 </head>
 
 <!--Body-->
@@ -15,11 +15,10 @@
 		<!--The main menu at the top of the screen with the logo to toggle to home-->
 		<div class="menu">
 			<ul>
-				<li class="logo"><img src="links/logo.png"></li>
-				<li><a href="index.html">Home</a></li>
-				<li class="active">Goods</li>
-				<li>About</li>
-				<li><a href="#" class="order-button"><span>Order</span></a></li>
+				<li class="logo"><a href="index.html"><img src="links/logo.png"></a></li>
+				<li><a href="index.html">HOME</a></li>
+				<li class="active">GOODS</li>
+				
 			</ul>
 	</div>
 
@@ -32,12 +31,30 @@
 		</div>
 
 		<section class="goods-photo">
-			<img src="links/logo.png">
-			<img src="links/pumpkin.png">
-			<img src="links/walnut.png">
-			<img src="links/blackberry.png">
-			<img src="links/caramel.png">
-			<img src="links/logo.png">
+			<div>
+				<span class="item-title">THE ORIGINAL</span>
+				<img src="links/logo.png">
+			</div>
+			<div>
+				<span class="item-title">PUMPKIN</span>
+				<img src="links/pumpkin.png">
+			</div>
+			<div>
+				<span class="item-title">WALNUT</span>
+				<img src="links/walnut.png">
+			</div>
+			<div>
+				<span class="item-title">BLACKBERRY</span>
+				<img src="links/blackberry.png">
+			</div>
+			<div>
+				<span class="item-title">CARAMEL</span>
+				<img src="links/caramel.png">
+			</div>
+			<div>
+				<span class="item-title">GLUTEN-FREE</span>
+				<img src="links/logo.png">
+			</div>
 		</section>
 
 	</div>
@@ -49,7 +66,7 @@
 	<!-- To center shopping cart link to the corner-->
 	<div class="cart">
 		<ul>
-			<li><i class="fa fa-cart-plus"></i><p>CHECK OUT</p></li>
+			<li><i class="fa fa-cart-plus"></i><a href="Cart.html"><p>CHECK OUT</p></a></li>
 	</div>
 
 </body>
